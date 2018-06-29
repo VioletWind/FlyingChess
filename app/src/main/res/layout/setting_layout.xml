@@ -1,0 +1,84 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+
+    >
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/fullscreen_content"
+        android:weightSum="20">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:text="飞行棋"
+            android:textSize="@android:dimen/notification_large_icon_height"
+            android:gravity="center"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:text="登录信息"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/LoginInfo"
+            android:layout_weight="2"
+            android:gravity="center_vertical|center" />
+
+        <Button
+            android:text="单人游戏"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/Single"
+            android:layout_marginBottom="10dp"
+            />
+
+        <Button
+            android:text="多人游戏"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/btn_multiPlayer"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:text="设置"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/Setting"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:text="退出游戏"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:id="@+id/Exit"
+            android:layout_marginBottom="10dp" />
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+
+
+
+
+
+

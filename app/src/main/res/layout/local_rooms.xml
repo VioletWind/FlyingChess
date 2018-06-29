@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.example.peng.flyingchess.RefreshableView
+        android:id="@+id/refreshable_view"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ></ListView>
+    </com.example.peng.flyingchess.RefreshableView>
+
+    <Button
+        android:text="创建房间"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btn_create" />
+
+</LinearLayout>

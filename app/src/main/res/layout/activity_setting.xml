@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+
+        <TextView
+            android:text="难度"
+            android:layout_height="match_parent"
+            android:id="@+id/difficultyText"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:layout_width="wrap_content" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:id="@+id/difficulty"
+
+            android:gravity="center">
+            <RadioButton
+                android:id="@+id/easy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简单"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hard"
+                android:text="困难"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+
+        <TextView
+            android:text="音量"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/volume"
+            android:layout_weight="0.378"
+            android:gravity="center"/>
+
+        <SeekBar
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/VolumeBar"
+            android:layout_weight="0.38"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:weightSum="1">
+
+        <TextView
+            android:text="语言"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/languageText"
+            android:layout_weight="0.494"
+            android:gravity="center"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/language"
+            android:gravity="center"
+            android:entries="@array/language"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25">
+
+        <Button
+            android:text="返回"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/goback" />
+    </RelativeLayout>
+
+</LinearLayout>
